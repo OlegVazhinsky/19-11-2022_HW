@@ -24,7 +24,7 @@ int GetNumber (string message) {
     return userNumber;
 }
 
-double[,] InitIntArray(int m, int n)
+double[,] InitArray(int m, int n)
 {
     double[,] array = new double[m, n];
     Random rnd = new Random();
@@ -37,7 +37,7 @@ double[,] InitIntArray(int m, int n)
     return array;
 }
 
-void PrintIntArray(double[,] array)
+void PrintArray(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -51,5 +51,5 @@ void PrintIntArray(double[,] array)
 
 int n = GetNumber("Введите количество строк массива - ");
 int m = GetNumber("Введите количество столбцов массива - ");
-double[,] myArray = InitIntArray(n,m);
-PrintIntArray(myArray);
+double[,] myArray = InitArray(n,m);
+PrintArray(myArray);
